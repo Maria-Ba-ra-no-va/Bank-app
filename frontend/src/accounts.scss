@@ -1,0 +1,156 @@
+.accounts {
+  position: relative;
+  padding: 0 50px;
+}
+
+.accounts__title {
+  display: inline-flex;
+  margin-right: 35px;
+}
+
+.accounts__sort-div {
+  display: inline-flex;
+  min-width: 300px;
+  vertical-align: top;
+}
+
+.accounts__sort-div .choices {
+  width: 100%;
+  border: 1px solid #116ACC;
+  border-radius: 7px;
+}
+
+.is-open .choices__inner,
+.is-focused .choices__inner,
+.choices__inner {
+  background: #FFFFFF !important;
+  border: 0 !important;
+  border-radius: 7px !important;
+  padding: 10px 16px !important;
+}
+
+.choices__list--single {
+  padding: 0 !important;
+}
+
+
+.is-open .choices__list[aria-expanded] {
+  border: none;
+  border-radius: 7px;
+}
+
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+  padding: 10px 10px 10px 16px !important;
+}
+
+.choices__list--dropdown {
+  padding: 12px 0 13px 0 !important;
+  filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
+  top: 106% !important;
+}
+
+.is-selected {
+  background: #A0C3FF !important;
+}
+
+.accounts__sort-div .choices__placeholder,
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item,
+.choices__item--selectable {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #374151;
+  opacity: 1;
+}
+
+.choices__list--dropdown .choices__placeholder {
+  display: none;
+}
+
+.accounts__btn-add-account {
+  position: absolute;
+  padding: 16px 24px;
+  right: 50px;
+  top: -6px;
+  display: flex;
+  align-items: center;
+}
+
+.accounts__btn-add-account img {
+  margin-right: 10px;
+}
+
+.accounts__cards {
+  margin-top: 57px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  row-gap: 50px;
+}
+
+.account {
+  position: relative;
+  width: fit-content;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  padding: 22px;
+  min-width: 400px;
+}
+
+.account__number {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #182233;
+  margin-bottom: 9px;
+}
+
+.account__balance {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #182233;
+  margin-bottom: 31px;
+}
+
+.account__text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.account__date {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.btn-open {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  padding: 16px 24px;
+}
+
+.accounts__cards .spinner {
+  margin: 150px auto;
+  grid-column: 2;
+}

@@ -1,0 +1,114 @@
+.form-autorization {
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 212px;
+  background: #F3F4F6;
+  border-radius: 50px;
+  padding: 50px 85px 103px 40px;
+}
+
+.form-autorization__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.form-autorization__div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-autorization__label {
+  min-width: 57px;
+  text-align: right;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #182233;
+  margin-right: 18px;
+}
+
+.form-autorization__input {
+  width: 300px;
+  background: #FFFFFF;
+  border: 1px solid #9CA3AF;
+  border-radius: 7px;
+  padding: 10px 16px;
+  transition: background .3s ease-in-out, border .3s ease-in-out;
+}
+
+.form-autorization__input ::placeholder {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #6B7280;
+}
+
+.form-autorization__input:focus-visible {
+  background: rgba(160, 195, 255, 0.1);
+  outline: 0;
+  border: 1px solid #116ACC;
+}
+
+.form-autorization__input:hover {
+  background: rgba(160, 195, 255, 0.05);
+  border: 1px solid #116ACC;
+}
+
+.login-error,
+.password-error {
+  display: none;
+  position: relative;
+  color: #BA0000;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  margin-left: 48px;
+}
+
+.login-error::after,
+.password-error::after {
+  position: absolute;
+  content: '';
+  left: -30px;
+  top: -3px;
+  background: url(./assets/images/error.svg);
+  width: 24px;
+  height: 24px;
+}
+
+
+.form-autorization__btn {
+  position: absolute;
+  left: 115px;
+  bottom: 50px;
+  background: #116ACC;
+  border-radius: 7px;
+  padding: 14px 21px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  transition: background .3s ease-in-out;
+}
+
+.form-autorization__btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #116ACC;
+}
+
+.form-autorization__btn:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #116ACC;
+}

@@ -1,0 +1,269 @@
+.currency {
+  padding: 0 50px 50px 50px;
+}
+
+.currency h1 {
+  margin-bottom: 56px;
+}
+
+.currency__content {
+  display: grid;
+  grid-template-areas: 'account exchange-rates'
+    'exchange exchange-rates';
+  row-gap: 44px;
+  column-gap: 49px;
+}
+
+.currency__h2 {
+  font-size: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-bottom: 25px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.currency__account {
+  grid-area: account;
+  width: fit-content;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 50px;
+  margin-right: 50px;
+}
+
+.currency__account-list {
+  width: fit-content;
+}
+
+.currency__account-list .item {
+  display: flex;
+  width: 488px;
+  justify-content: space-between;
+}
+
+.currency__account-list .item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.currency__account-list .item__name,
+.currency__account-list .item__amount,
+.currency__exchange-rates-list .item__code,
+.currency__exchange-rates-list .item__amount {
+  color: #000;
+  font-size: 20px;
+  font-family: Work Sans;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.item__dashed {
+  border-bottom: 1px dashed #000000;
+  width: -webkit-fill-available;
+  margin: 0 10px;
+}
+
+.currency__account-list .item__name,
+.currency__exchange-rates-list .item__code {
+  font-weight: 600;
+}
+
+.currency__account-list .item__amount,
+.currency__exchange-rates-list .item__amount {
+  font-weight: 400;
+}
+
+.currency__exchange {
+  grid-area: exchange;
+  padding: 50px 50px 62px 50px;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+}
+
+.currency__exchange__form {
+  display: flex;
+  position: relative;
+}
+
+.currency__exchange__div-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.currency__exchange label {
+  color: #000;
+  font-size: 16px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.16px;
+}
+
+.currency__exchange .choices[data-type*=select-one] {
+  width: 134px;
+  border-radius: 7px;
+  border: 1px solid var(--gray-colors-gray-5, #9CA3AF);
+  margin: 0 20px;
+  height: fit-content;
+}
+
+
+.currency__exchange .choices[data-type*=select-one]:last-child {
+  margin-right: 0;
+}
+
+.currency__exchange .choices__inner {
+  padding: 8px 16px !important;
+}
+
+.currency__exchange .choices__item--selectable {
+  color: #000;
+  font-size: 16px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+}
+
+.currency__exchange__div-left {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.currency__exchange__input {
+  margin-left: 8px;
+  width: 300px;
+  background: #FFFFFF;
+  border: 1px solid #9CA3AF;
+  border-radius: 7px;
+  padding: 9px 16px;
+  transition: background .3s ease-in-out, border .3s ease-in-out;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #000;
+}
+
+.currency__exchange__input:focus-visible {
+  background: rgba(160, 195, 255, 0.1);
+  outline: 0;
+  border: 1px solid #116ACC;
+}
+
+.currency__exchange__input:hover {
+  background: rgba(160, 195, 255, 0.05);
+  border: 1px solid #116ACC;
+}
+
+
+.currency__exchange button {
+  padding: 46px 13px;
+}
+
+.currency__exchange-error {
+  display: none;
+  position: absolute;
+  bottom: -25px;
+  left: 50px;
+  color: #BA0000;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  margin-left: 48px;
+}
+
+.currency__exchange-error::after {
+  position: absolute;
+  content: '';
+  left: -30px;
+  top: -3px;
+  background: url(./assets/images/error.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.currency__exchange-rates {
+  grid-area: exchange-rates;
+  border-radius: 50px;
+  background: #E5E5E5;
+  padding: 50px 50px 79px 50px;
+  width: fit-content;
+}
+
+.currency__exchange-rates-list .item {
+  display: flex;
+  width: 603px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.currency__exchange-rates-list .item:last-child {
+  margin-bottom: 0;
+}
+
+.currency__exchange-rates-list .item__amount {
+  padding-right: 35px;
+}
+
+.green-arrow,
+.red-arrow {
+  position: relative;
+}
+
+.green-arrow::after {
+  border: 1px solid transparent;
+  content: "";
+  top: -25%;
+  right: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-color: none;
+  border-width: 10px;
+  margin-left: -10px;
+  border-color: #76CA66 rgba(255, 212, 52, 0) rgba(255, 212, 52, 0);
+  transform: rotate(180deg);
+}
+
+
+.red-arrow::after {
+  border: 1px solid transparent;
+  content: "";
+  top: 25%;
+  right: 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-color: none;
+  border-width: 10px;
+  margin-left: -10px;
+  border-color: #FD4E5D rgba(255, 212, 52, 0) rgba(255, 212, 52, 0);
+}
+
+.green-dashed {
+  border-bottom: 1px dashed #76CA66;
+}
+
+.red-dashed {
+  border-bottom: 1px dashed #FD4E5D;
+}
