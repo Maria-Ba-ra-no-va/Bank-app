@@ -5,7 +5,8 @@
 2. Kоманда для developer-разработки:
             в папке frontend -  npm run dev
 3. Подключение baсkend:
-            в папке project - npm start
+            в папке project - npm i
+            затем -  npm start
 
 После этого на локальном хосте в браузере можно открыть приложение.
 
